@@ -1,0 +1,46 @@
+$field-size: 800px;
+
+.field {
+  width: $field-size;
+  height: $field-size;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 12.5%;
+  height: 12.5%;
+  // background-color: blanchedalmond;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.figure_whitePawn {
+  background-image: url("../../icons/white-pawn.png");
+}
+
+.figure_blackPawn {
+  background-image: url("../../icons/black-pawn.png");
+}
+
+.figure {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.activeFigure {
+  border: 5px solid yellow;
+}
+
+.canGo  {
+  background: rgba(#000000, 0.5);
+  border: black solid 2px;
+}
