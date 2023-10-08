@@ -6,6 +6,9 @@ import handleBlackPawn from '../figures/blackPawn';
 import handleWhitePawn from '../figures/whitePawn';
 import handleQueen from '../figures/queen';
 import handleCastle from '../figures/castle';
+import handleOfficer from '../figures/officer';
+import handleKing from '../figures/king';
+import handleHorse from '../figures/horse';
 
 export default function Field() {
   
@@ -59,6 +62,18 @@ export default function Field() {
       setActiveElement(data[id]);
     } else if (e.target.className.includes('figure_whiteCastle')) {
       handleCastle(e, 'white')
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_blackOfficer')) {
+      handleOfficer(e, 'black')
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_whiteOfficer')) {
+      handleOfficer(e, 'white')
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_blackKing')) {
+      handleKing(e, 'black')
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_blackHorse')) {
+      handleHorse(e, 'black')
       setActiveElement(data[id]);
     }
     

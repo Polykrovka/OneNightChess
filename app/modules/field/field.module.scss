@@ -47,6 +47,23 @@ $field-size: 800px;
   background-image: url("../../icons/white-castle.png");
 }
 
+.figure_blackOfficer {
+  background-image: url("../../icons/black-officer.png");
+}
+
+.figure_blackKing {
+  background-image: url("../../icons/black-king.png");
+}
+
+.figure_blackHorse {
+  background-image: url("../../icons/black-horse.png");
+}
+
+.figure_whiteOfficer {
+  background-position: right;
+  background-image: url("../../icons/white-officer.png");
+}
+
 .figure {
   width: 100%;
   height: 100%;
