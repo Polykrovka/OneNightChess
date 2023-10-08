@@ -11,7 +11,14 @@ for (let j = 1; j <= 8; j++) {
     } else if (i === 7) {
       data[`${i}${j}`].figure = 'blackPawn';
       data[`${i}${j}`].figureColor = 'black';
+    } else if (i === 8 && j ===5) {
+      data[`${i}${j}`].figure = 'blackQueen';
+      data[`${i}${j}`].figureColor = 'black';
+    } else if (i === 1 && j === 5) {
+      data[`${i}${j}`].figure = 'whiteQueen';
+      data[`${i}${j}`].figureColor = 'white';
     }
+    
     toggle = !toggle;
   }
   toggle = !toggle;

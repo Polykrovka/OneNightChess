@@ -1,11 +1,10 @@
 'use client'; 
 import styles from './field.module.scss'
-import './field.module.scss'
-import './field.module.css'
 import { data } from '../data'
 import { useState } from 'react';
 import handleBlackPawn from '../figures/blackPawn';
 import handleWhitePawn from '../figures/whitePawn';
+import handleQueen from '../figures/queen';
 
 export default function Field() {
   
@@ -27,19 +26,32 @@ export default function Field() {
       data[id].figureColor = activeElement.figureColor
       activeElement.figure = null;
       activeElement.figureColor = null;
-      setActiveElement(null);
+      removeCanGo()
+
+      if (activeElement) {
+        activeElement.isActive = false;
+        setActiveElement(null);
+      }
+      return
     }
-    removeCanGo()
 
     if (activeElement) {
       activeElement.isActive = false;
+      setActiveElement(null);
     }
+    
 
     if (e.target.className.includes('figure_blackPawn')) {
       handleBlackPawn(e)
       setActiveElement(data[id]);
     } else if (e.target.className.includes('figure_whitePawn')) {
       handleWhitePawn(e)
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_blackQueen')) {
+      handleQueen(e, 'black')
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_whiteQueen')) {
+      handleQueen(e, 'white')
       setActiveElement(data[id]);
     }
     

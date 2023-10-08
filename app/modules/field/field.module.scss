@@ -29,11 +29,21 @@ $field-size: 800px;
   background-image: url("../../icons/black-pawn.png");
 }
 
+.figure_blackQueen {
+
+  background-image: url("../../icons/black-queen.png");
+}
+
+.figure_whiteQueen {
+  background-image: url("../../icons/white-queen.png");
+}
+
 .figure {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 .activeFigure {
