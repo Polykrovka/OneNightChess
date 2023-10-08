@@ -1,4 +1,4 @@
-$field-size: 800px;
+$field-size: 100vw;
 
 .field {
   width: $field-size;
@@ -6,6 +6,9 @@ $field-size: 800px;
   display: flex;
   flex-wrap: wrap;
   border: black 1px solid;
+  margin: 48px;
+  max-width: 800px;
+  max-height: 800px;
 }
 
 .cell {
@@ -55,8 +58,16 @@ $field-size: 800px;
   background-image: url("../../icons/black-king.png");
 }
 
+.figure_whiteKing {
+  background-image: url("../../icons/white-king.png");
+}
+
 .figure_blackHorse {
   background-image: url("../../icons/black-horse.png");
+}
+
+.figure_whiteHorse {
+  background-image: url("../../icons/white-horse.png");
 }
 
 .figure_whiteOfficer {

@@ -20,6 +20,9 @@ for (let j = 1; j <= 8; j++) {
     } else if (i === 8 && j === 4) {
       data[`${i}${j}`].figure = 'blackKing';
       data[`${i}${j}`].figureColor = 'black';
+    } else if (i === 1 && j === 4) {
+      data[`${i}${j}`].figure = 'whiteKing';
+      data[`${i}${j}`].figureColor = 'white';
     } else if (i === 8 && (j === 8 || j === 1)) {
       data[`${i}${j}`].figure = 'blackCastle';
       data[`${i}${j}`].figureColor = 'black';
@@ -35,6 +38,9 @@ for (let j = 1; j <= 8; j++) {
     } else if (i === 8 && (j === 7 || j === 2)) {
       data[`${i}${j}`].figure = 'blackHorse';
       data[`${i}${j}`].figureColor = 'black';
+    } else if (i === 1 && (j === 7 || j === 2)) {
+      data[`${i}${j}`].figure = 'whiteHorse';
+      data[`${i}${j}`].figureColor = 'white';
     }
     
     toggle = !toggle;
