@@ -5,6 +5,7 @@ import { useState } from 'react';
 import handleBlackPawn from '../figures/blackPawn';
 import handleWhitePawn from '../figures/whitePawn';
 import handleQueen from '../figures/queen';
+import handleCastle from '../figures/castle';
 
 export default function Field() {
   
@@ -52,6 +53,12 @@ export default function Field() {
       setActiveElement(data[id]);
     } else if (e.target.className.includes('figure_whiteQueen')) {
       handleQueen(e, 'white')
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_blackCastle')) {
+      handleCastle(e, 'black')
+      setActiveElement(data[id]);
+    } else if (e.target.className.includes('figure_whiteCastle')) {
+      handleCastle(e, 'white')
       setActiveElement(data[id]);
     }
     

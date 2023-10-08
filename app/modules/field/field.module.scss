@@ -5,6 +5,7 @@ $field-size: 800px;
   height: $field-size;
   display: flex;
   flex-wrap: wrap;
+  border: black 1px solid;
 }
 
 .cell {
@@ -36,6 +37,14 @@ $field-size: 800px;
 
 .figure_whiteQueen {
   background-image: url("../../icons/white-queen.png");
+}
+
+.figure_blackCastle {
+  background-image: url("../../icons/black-castle.png");
+}
+
+.figure_whiteCastle {
+  background-image: url("../../icons/white-castle.png");
 }
 
 .figure {
